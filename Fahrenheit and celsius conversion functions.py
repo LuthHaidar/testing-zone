@@ -8,6 +8,11 @@ f_or_c = input("Type F for Fahrenheit to Celsius conversion, and C for Celsius t
 
 deg = int(input("Type in the temperature to be converted: "))
 
-if f_or_c = "F": fahrenheit_to_celsius(deg)
-    else if f_or_c = "C": celsius_to_fahrenheit(deg)
-    else: pass
+if f_or_c == "F": 
+    ans = fahrenheit_to_celsius(deg)
+    print(ans)
+elif f_or_c == "C": 
+        ans = celsius_to_fahrenheit(deg)
+        print(ans)
+else: 
+    pass
