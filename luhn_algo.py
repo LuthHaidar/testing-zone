@@ -10,16 +10,16 @@ def luhn(n):
     for el in c:
         sum_res=0
         if el>9:
-            idx = c.index(el)
-            e.pop(idx)
+            id = c.index(el)
+            e.pop(id)
             while el:
                 rem = el%10
                 sum_res+=rem
                 el = el//10 
-            e.insert(idx, sum_res)
+            e.insert(id, sum_res)
     c_sum=sum(e)
     d_sum = sum(d)
-    final_sum = c_sum+ d_sum
-    if final_sum%10==0:
+    f_sum = c_sum+ d_sum
+    if f_sum%10==0:
         return True
     return False
