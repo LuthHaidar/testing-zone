@@ -1,5 +1,7 @@
 def sqrt(n):
   x = 1
-  for i in range(6 * (10 ** 5)):
+  iterations = 6 * (10 ** 7)
+  while iterations > 0:
+    iterations = iterations - 1
     x = (x + n / 2) / 2
   return x
