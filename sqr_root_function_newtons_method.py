@@ -1,7 +1,8 @@
 def sqrt(n):
-  x = 1
-  iterations = 6 * (10 ** 7)
-  while iterations > 0:
-    iterations = iterations - 1
-    x = (x + n / 2) / 2
-  return x
+    x = n
+    while (True):
+        rt = 0.5 * (x + (n / x))
+        if (((rt - x) ** 2) ** 0.5) < 0.0000000001:
+            break
+        x = rt
+    return rt
