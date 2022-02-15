@@ -16,3 +16,9 @@ def luhn(n):
         return True
     else:
         return False
+
+print(luhn(135))	#False	
+print(luhn(185))	#False	
+print(luhn(138743))	#True	
+print(luhn(145765676549342))	#True	
+print(luhn(145765676549348))	#False
