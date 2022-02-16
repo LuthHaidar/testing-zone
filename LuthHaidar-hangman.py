@@ -1,6 +1,4 @@
 import random
-
-import random
 import sys
 
 # hangman pictures
