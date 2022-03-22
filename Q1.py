@@ -13,4 +13,4 @@ def dec2bin(number):
 
 #q1b
 def bin2dec(number):
-    
+    return number

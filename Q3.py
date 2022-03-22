@@ -1,7 +1,7 @@
-original = input ("Input a word: ")
-def rule():
+def rule(original):
     global original
     global new
+    new = original
     if original[0] == 'a' or 'e' or 'i' or 'o' or 'u':
         new = original + '-way'
     for i in original:
@@ -12,6 +12,12 @@ def rule():
             new = original + '-way'
     if new[0] != 'a' or 'e' or 'i' or 'o' or 'u':
         for i in new:
-            if new[i] != 'a' or 'e' or 'i' or 'o' or 'u':
-                new = new[i-1:]
+            if new[i] != 'a' or 'e' or 'i' or 'o' or 'u' and new[i] != "-":
+                new = new[i-1:] + "-" + new[i] + "ay"
+
+def piglatin(sentence):
+    return rule(sentence)
+    
+
+
     
