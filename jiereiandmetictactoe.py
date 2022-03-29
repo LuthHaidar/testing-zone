@@ -1,5 +1,5 @@
-def main():
-    win = 0
+def main(): #the main function where displaying, editing board, and defining the winner takes place
+    win = 0 # variable declarations
     turn = 0
     row = 0
     col = 0
@@ -8,7 +8,7 @@ def main():
     line3 = ['1: ' ,'  ', '  ', '  ']
     line4 = ['2: ' ,'  ', '  ', '  ']
     while win == 0:
-        if turn % 2 == 0:
+        if turn % 2 == 0: #determining turn
             piece = 'X '
             print("Ready Player One")
         else:
@@ -68,15 +68,15 @@ def main():
     else:
         print("haha Other Guy noob, Player One won")
 
-def intro():
+def intro(): #basic intro with instructions
     print("Welcome to Tic Tac Toe by Luth and Jie Rei.\n")
     print("The rules are simple. You play against a friend, or yourself, if you have no friends.\n")
     print("You can play on the board in the following way:")
     print("When asked for your row, input your selected row number.\n")
     print("When asked for your column, input your selected column number.\n")
-    wanttoplay = input("Do you want to play? (y/n): ")
-    if wanttoplay == "y":
+    wanttoplay = input("Do you want to play? (y/n): ") #determines if player wants to play
+    if wanttoplay == "y": 
         print("Let's play!")
         main()
 
-intro()
+intro() #starts the program
