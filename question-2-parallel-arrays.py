@@ -9,6 +9,8 @@ def findTopStudent(students, scores):
             topScore = scores[i]
             topstudentlist = [(topStudent, topScore)]
     for i in range(len(students)):
-        if scores[i] = topScore and students[i] is not topStudent:
-            topstudentlist.append(topStudent, topScore))
+        if scores[i] == topScore and students[i] is not topStudent:
+            topStudent = students[i]
+            topScore = scores[i]
+            topstudentlist.append((topStudent, topScore))
     return topstudentlist
