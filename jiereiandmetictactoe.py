@@ -47,26 +47,26 @@ def main(): #the main function where displaying, editing board, and defining the
         elif line2[3] == 'O' and line3[3] == 'O' and line4[3] == 'O':
             win = 1
         elif line2[1] == 'O' and line3[1] == 'O' and line4[1] == 'O':
-        win = 1
-    elif line2[3] == 'O' and line3[2] == 'O' and line4[1] == 'O':
-        win = 1
-    elif line2[1] == 'O' and line3[2] == 'O' and line4[3] == 'O':
-        win = 1
-        
-    elif line2[2] == 'X' and line3[2] == 'X' and line4[2] == 'X':
-        win = 1
-    elif line2[3] == 'X' and line3[3] == 'X' and line4[3] == 'X':
-        win = 1
-    elif line2[1] == 'X' and line3[1] == 'X' and line4[1] == 'X':
-        win = 1
-    elif line2[1] == 'X' and line3[2] == 'X' and line4[3] == 'X':
-        win = 1
-    elif line2[3] == 'X' and line3[2] == 'X' and line4[1] == 'X':
-        win = 1
-    if turn%2 == 0:
-        print("Omai god Other Guy won WOOOW :shock:")
-    else:
-        print("haha Other Guy noob, Player One won")
+            win = 1
+        elif line2[3] == 'O' and line3[2] == 'O' and line4[1] == 'O':
+            win = 1
+        elif line2[1] == 'O' and line3[2] == 'O' and line4[3] == 'O':
+            win = 1
+            
+        elif line2[2] == 'X' and line3[2] == 'X' and line4[2] == 'X':
+            win = 1
+        elif line2[3] == 'X' and line3[3] == 'X' and line4[3] == 'X':
+            win = 1
+        elif line2[1] == 'X' and line3[1] == 'X' and line4[1] == 'X':
+            win = 1
+        elif line2[1] == 'X' and line3[2] == 'X' and line4[3] == 'X':
+            win = 1
+        elif line2[3] == 'X' and line3[2] == 'X' and line4[1] == 'X':
+            win = 1
+        if turn%2 == 0:
+            print("Omai god Other Guy won WOOOW :shock:")
+        else:
+            print("haha Other Guy noob, Player One won")
 
 def intro(): #basic intro with instructions
     print("Welcome to Tic Tac Toe by Luth and Jie Rei.\n")
