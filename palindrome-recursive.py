@@ -1,5 +1,9 @@
+
 def palindromeTest(string):
     if string[0] == string[-1] and palindromeTest(string[1:-1]):
         return "Its a palindrome"
     else:
         return "Not a palindrome"
+
+#doesn't actually work
+#no clue why
