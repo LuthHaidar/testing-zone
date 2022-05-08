@@ -1,5 +1,5 @@
 def mult(a, b):
-    if b == 0:
+    if a ==  0 or b == 0:
         return 0
     return a + mult(a, b - 1)
 
