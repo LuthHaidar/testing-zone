@@ -8,11 +8,15 @@ def pascalRow(number):
     pascalDict[number] = row
     return row
 
+def pascalFormat(number, row):
+    number = len(str(pascalRow(number)))
+    row = " " * ((number - len(str(row)))// 2)  + str(row)
+    return row
+
 def printPascal(number):
-    number += 1
-    for i in range(number):
-        try:
-            print(pascalDict[i+1])
-        except:
-            print(pascalRow(i))
-    return None
+    try:
+        for i in range(0, number+1):
+            print(pascalFormat(number, pascalDict[i]))
+    except KeyError:
+        for i in range(0, number+1):
+            print(pascalFormat(number, pascalRow(i)))
