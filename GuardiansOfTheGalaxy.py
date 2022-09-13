@@ -40,6 +40,7 @@ class Guardian:
             print(self.name, "cannot board the", ship.name)
         else:
             ship.guardian.append(self.name)
+            ship.guardian = list(set(ship.guardian))
             print(self.name, "boards the", ship.name)
             for i in self.knownplanets:
                 if i not in ship.known_locations:
